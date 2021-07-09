@@ -1,0 +1,53 @@
+<!-- <p class="myclass mynewclass">home works!</p>
+<input type="text" [(ngModel)]="message">
+<h1 [innerText]="message"></h1>
+
+<button (click)="toggleTable()">Toggle Table</button>
+
+<div [hidden]="flag">
+
+    <table border="1">
+        <tr>
+            <th>
+                Sr.No
+            </th>
+            <th>
+                ID
+            </th>
+            <th>
+                Name
+            </th>
+            <th>Status</th>
+        </tr>
+        <tr *ngFor="let customer of customers; let i = index; let e= even; let o = odd; let l= last"
+            [ngClass]="{odd:o,even:e}">
+            <td>{{i}}</td>
+            <td>{{customer.id}}</td>
+            <td>{{customer.name}}</td>
+            <td>{{'even : ' + e + ' odd : ' + o}}</td>
+        </tr>
+
+
+
+    </table>
+</div>
+
+<input type="text">
+
+<input type="text" appAutofocus> -->
+
+<div style="border:2px solid rgb(143, 143, 156); width: 100%;">
+
+    <ng-content select="[firstblock]"></ng-content>
+    {{'I am a counter in Child :' + counter}}
+    <hr>
+    <button (click)="increment()">Increment from Child</button>
+    <button (click)="decrement()">Decrement from Child</button>
+    <!-- <ng-content></ng-content> -->
+
+    <!-- 
+<ng-content></ng-content> -->
+
+    <ng-content></ng-content>
+
+</div>
